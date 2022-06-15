@@ -598,7 +598,7 @@
               "yAxisName": "Amount ($)",
               "chartName": "Expenses per Account Name",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "xAxisName": "Date",
+              "xAxisName": "Account Name",
               "chartType": "COLUMN_CHART"
             },
             {

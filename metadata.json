@@ -2,17 +2,17 @@
   "clientSchemaVersion": 1,
   "serverSchemaVersion": 4,
   "pageOrder": [
-    "Update Transactions",
+    "Analytics",
     "Add Transactions",
-    "Analytics"
+    "Update Transactions"
   ],
   "publishedPageOrder": [
-    "Update Transactions",
+    "Analytics",
     "Add Transactions",
-    "Analytics"
+    "Update Transactions"
   ],
-  "publishedDefaultPageName": "Update Transactions",
-  "unpublishedDefaultPageName": "Update Transactions",
+  "publishedDefaultPageName": "Analytics",
+  "unpublishedDefaultPageName": "Analytics",
   "invisibleActionFields": {
     "Add Transactions_AddTransactions": {
       "unpublishedUserSetOnLoad": false,
