@@ -2,7 +2,7 @@
   "pluginType": "SAAS",
   "pluginId": "google-sheets-plugin",
   "unpublishedAction": {
-    "name": "getTransactions",
+    "name": "getLastTransactions",
     "datasource": {
       "name": "GSheet",
       "pluginId": "google-sheets-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Main",
+    "pageId": "Add Transactions",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -45,7 +45,7 @@
         },
         {
           "key": "rowLimit",
-          "value": "{{Table1.pageSize}}"
+          "value": "10"
         },
         {
           "key": "sheetName",
@@ -53,7 +53,7 @@
         },
         {
           "key": "rowOffset",
-          "value": "{{(Table1.pageNo - 1) * Table1.pageSize}}"
+          "value": "800"
         },
         {
           "key": "rowObject"
@@ -85,27 +85,17 @@
       ]
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "pluginSpecifiedTemplates[8].value"
-      },
-      {
-        "key": "pluginSpecifiedTemplates[6].value"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "(Table1.pageNo - 1) * Table1.pageSize",
-      "Table1.pageSize"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Main_getTransactions",
+  "id": "Add Transactions_getLastTransactions",
   "deleted": false,
-  "gitSyncId": "62a9ae4284b91337251a8463_62a9aeea84b91337251a84e5"
+  "gitSyncId": "62a9ae4284b91337251a8463_62a9d13a84b91337251a8ee1"
 }

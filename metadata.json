@@ -2,15 +2,35 @@
   "clientSchemaVersion": 1,
   "serverSchemaVersion": 4,
   "pageOrder": [
-    "Main"
+    "Update Transactions",
+    "Add Transactions",
+    "Analytics"
   ],
   "publishedPageOrder": [
-    "Main"
+    "Update Transactions",
+    "Add Transactions",
+    "Analytics"
   ],
-  "publishedDefaultPageName": "Main",
-  "unpublishedDefaultPageName": "Main",
+  "publishedDefaultPageName": "Update Transactions",
+  "unpublishedDefaultPageName": "Update Transactions",
   "invisibleActionFields": {
-    "Main_getTransactions": {
+    "Add Transactions_AddTransactions": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Add Transactions_getLastTransactions": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Update Transactions_deleteTransaction": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Update Transactions_getTransactions": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
+    "Update Transactions_updateTransactions": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     }
