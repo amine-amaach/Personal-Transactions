@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 890,
+          "bottomRow": 2460,
           "containerStyle": "none",
           "snapRows": 89,
           "parentRowSpace": 1,
@@ -33,13 +33,14 @@
               "displayName": "Container",
               "iconSVG": "/static/media/icon.1977dca3.svg",
               "topRow": 0,
-              "bottomRow": 40,
+              "bottomRow": 10,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 19.8125,
-              "leftColumn": 0,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 12,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -54,7 +55,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 400,
+                  "bottomRow": 390,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -70,17 +71,138 @@
                       "key": "accentColor"
                     }
                   ],
-                  "children": [],
+                  "children": [
+                    {
+                      "widgetName": "Text1CopyCopy",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 4,
+                      "bottomRow": 8,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 19.5,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 36,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "{{function(){\n\tlet d = new Date(), user = appsmith.user.name\nlet ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d);\nlet mo = new Intl.DateTimeFormat('en', { month: '2-digit' }).format(d);\nlet da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d);\n\treturn \"Welcome back \" + user + \" Today is : \" + String(mo) + \"/\" + String(da) + \"/\" +String(ye)\n}()}}",
+                      "key": "jugyebqxhv",
+                      "isDeprecated": false,
+                      "rightColumn": 63,
+                      "textAlign": "CENTER",
+                      "widgetId": "clcjjcdpub",
+                      "isVisible": true,
+                      "fontStyle": "ITALIC",
+                      "textColor": "#FF9B27",
+                      "version": 1,
+                      "parentId": "vrsnxq5bn7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "0.875rem"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Image1",
+                      "displayName": "Image",
+                      "iconSVG": "/static/media/icon.52d8fb96.svg",
+                      "topRow": 0,
+                      "bottomRow": 8,
+                      "parentRowSpace": 10,
+                      "type": "IMAGE_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 19.8125,
+                      "dynamicTriggerPathList": [],
+                      "imageShape": "RECTANGLE",
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+                      "key": "0jrk7wfcdz",
+                      "image": "https://images-na.ssl-images-amazon.com/images/I/71m3eMI-wjL.png",
+                      "isDeprecated": false,
+                      "rightColumn": 10,
+                      "objectFit": "contain",
+                      "widgetId": "ib3lk0u0cy",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "vrsnxq5bn7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "maxZoomLevel": 1,
+                      "enableDownload": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "enableRotation": false
+                    },
+                    {
+                      "widgetName": "Text1",
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 0,
+                      "bottomRow": 4,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "Rubik",
+                      "parentColumnSpace": 19.5,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 14,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Expenses Tracker Application ",
+                      "key": "jugyebqxhv",
+                      "isDeprecated": false,
+                      "rightColumn": 55,
+                      "textAlign": "CENTER",
+                      "widgetId": "nnf4lhfkyp",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#05D1AF",
+                      "version": 1,
+                      "parentId": "vrsnxq5bn7",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "fontSize": "1.875rem"
+                    }
+                  ],
                   "key": "i0m1gg788s",
                   "isDeprecated": false,
                   "rightColumn": 475.5,
                   "detachFromLayout": true,
-                  "widgetId": "0i5tsj5tto",
+                  "widgetId": "vrsnxq5bn7",
                   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                   "containerStyle": "none",
                   "isVisible": true,
                   "version": 1,
-                  "parentId": "6qx7vgaej7",
+                  "parentId": "bpcmzjpi36",
                   "renderMode": "CANVAS",
                   "isLoading": false,
                   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
@@ -90,8 +212,8 @@
               "key": "t0cmlo0p18",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 24,
-              "widgetId": "6qx7vgaej7",
+              "rightColumn": 51,
+              "widgetId": "bpcmzjpi36",
               "containerStyle": "card",
               "isVisible": true,
               "version": 1,
@@ -99,14 +221,750 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "setAdaptiveYMin": true,
+              "widgetName": "Chart1Copy1CopyCopy",
+              "allowScroll": false,
+              "dynamicPropertyPathList": [],
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 167,
+              "bottomRow": 211,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "5uxj0neig0": {
+                  "seriesName": "Expenses per Category",
+                  "data": "{{\nfunction(){\n    let debit=0,categories=[],result=[]\n    for(let i=0;i < Table1.tableData.length; i++){\n       categories.push(Table1.tableData[i][\"Category\"])\n    }\n    categories = [... new Set(categories)]\n    for(let category=0; category<categories.length;category++){\n      let count=0\n      for(let i=0;i<Table1.tableData.length;i++){\n        if(Table1.tableData[i][\"Category\"] == categories[category]){\n          count += parseFloat(Table1.tableData[i][\"Amount\"])\n        }\n      }\n      result.push({\"x\": categories[category],\n                  \"y\": count})\n    }\n  return result\n}()\n}}"
+                }
+              },
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "chartData.5uxj0neig0.data"
+                }
+              ],
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "dbzb956pkt",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "0jtyw4oddz",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Amount ($)",
+              "chartName": "Expenses per Category",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Categories",
+              "chartType": "LINE_CHART"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "setAdaptiveYMin": true,
+              "widgetName": "Chart1Copy1Copy",
+              "allowScroll": false,
+              "dynamicPropertyPathList": [],
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 109,
+              "bottomRow": 167,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "5uxj0neig0": {
+                  "seriesName": "Expenses per Category",
+                  "data": "{{\nfunction(){\n    let debit=0,categories=[],result=[]\n    for(let i=0;i < Table1.tableData.length; i++){\n       categories.push(Table1.tableData[i][\"Category\"])\n    }\n    categories = [... new Set(categories)]\n    for(let category=0; category<categories.length;category++){\n      let count=0\n      for(let i=0;i<Table1.tableData.length;i++){\n        if(Table1.tableData[i][\"Category\"] == categories[category]){\n          count += parseFloat(Table1.tableData[i][\"Amount\"])\n        }\n      }\n      result.push({\"x\": categories[category],\n                  \"y\": count})\n    }\n  return result\n}()\n}}"
+                }
+              },
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "chartData.5uxj0neig0.data"
+                }
+              ],
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "dbzb956pkt",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "jj6e9g0od9",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Amount ($)",
+              "chartName": "Expenses per Category",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Date",
+              "chartType": "PIE_CHART"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "setAdaptiveYMin": true,
+              "widgetName": "Chart1CopyCopy",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 60,
+              "bottomRow": 109,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "ne16c9y3wg": {
+                  "seriesName": "Expenses/Account",
+                  "data": "{{\nfunction(){\n    let checking=0,platinum=0,silver=0\n    for(let i=0;i < Table1.tableData.length; i++){\n        if(Table1.tableData[i][\"Account\"] == \"Checking\"){\n\t\t\t\t\tchecking += parseInt(Table1.tableData[i][\"Amount\"])\n\t\t\t\t}else if(Table1.tableData[i][\"Account\"] == \"Platinum Card\"){\n\t\t\t\t\tplatinum += parseInt(Table1.tableData[i][\"Amount\"])\n\t\t\t\t}else if(Table1.tableData[i][\"Account\"] == \"Silver Card\"){\n\t\t\t\t\tsilver += parseInt(Table1.tableData[i][\"Amount\"])\n\t\t\t\t}\n    }\n        return [{\n          \"x\": \"Checking\",\n\t\t\t\t\t\"y\": checking\n        },{\n          \"x\": \"Platinum Card\",\n\t\t\t\t\t\"y\": platinum\n        },{\n          \"x\": \"Silver Card\",\n\t\t\t\t\t\"y\": silver\n        }]\n}()\n}}\n"
+                }
+              },
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "chartData.ne16c9y3wg.data"
+                }
+              ],
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "dbzb956pkt",
+              "isDeprecated": false,
+              "rightColumn": 27,
+              "widgetId": "onwv5184ld",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Amount ($)",
+              "chartName": "Expenses per Account Name",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Date",
+              "chartType": "PIE_CHART"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "setAdaptiveYMin": true,
+              "widgetName": "Chart1Copy1",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 11,
+              "bottomRow": 60,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "ne16c9y3wg": {
+                  "seriesName": "Debit",
+                  "data": "{{\nfunction(){\n    let debit=[]\n    for(let i=0;i < Table1.tableData.length; i++){\n        if(Table1.tableData[i][\"Transaction\"] == \"Debit\"){\n\t\t\t\t\tdebit.push({\"x\":Table1.tableData[i][\"Date\"], \"y\": parseFloat(Table1.tableData[i][\"Amount\"])})\n\t\t\t\t}\n    }  \n  return debit\n}()\n}}\n"
+                },
+                "5uxj0neig0": {
+                  "seriesName": "Credit",
+                  "data": "{{\nfunction(){\n    let credit=[]\n    for(let i=0;i < Table1.tableData.length; i++){\n        if(Table1.tableData[i][\"Transaction\"] == \"Credit\"){\n\t\t\t\t\tcredit.push({\"x\":Table1.tableData[i][\"Date\"], \"y\": parseFloat(Table1.tableData[i][\"Amount\"])})\n\t\t\t\t}\n    }  \n  return credit\n}()\n}}"
+                }
+              },
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 24,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "chartData.ne16c9y3wg.data"
+                },
+                {
+                  "key": "chartData.5uxj0neig0.data"
+                }
+              ],
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "dbzb956pkt",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "92qve66qdl",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Amount ($)",
+              "chartName": "Expenses per Transaction type / Date",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Date",
+              "chartType": "AREA_CHART"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "setAdaptiveYMin": true,
+              "widgetName": "Chart1Copy",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 60,
+              "bottomRow": 109,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "ne16c9y3wg": {
+                  "seriesName": "Expenses/Account",
+                  "data": "{{\nfunction(){\n    let checking=0,platinum=0,silver=0\n    for(let i=0;i < Table1.tableData.length; i++){\n        if(Table1.tableData[i][\"Account\"] == \"Checking\"){\n\t\t\t\t\tchecking += parseInt(Table1.tableData[i][\"Amount\"])\n\t\t\t\t}else if(Table1.tableData[i][\"Account\"] == \"Platinum Card\"){\n\t\t\t\t\tplatinum += parseInt(Table1.tableData[i][\"Amount\"])\n\t\t\t\t}else if(Table1.tableData[i][\"Account\"] == \"Silver Card\"){\n\t\t\t\t\tsilver += parseInt(Table1.tableData[i][\"Amount\"])\n\t\t\t\t}\n    }\n        return [{\n          \"x\": \"Checking\",\n\t\t\t\t\t\"y\": checking\n        },{\n          \"x\": \"Platinum Card\",\n\t\t\t\t\t\"y\": platinum\n        },{\n          \"x\": \"Silver Card\",\n\t\t\t\t\t\"y\": silver\n        }]\n}()\n}}\n"
+                }
+              },
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 27,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "chartData.ne16c9y3wg.data"
+                }
+              ],
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "dbzb956pkt",
+              "isDeprecated": false,
+              "rightColumn": 64,
+              "widgetId": "kyn8p5tycl",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Amount ($)",
+              "chartName": "Expenses per Account Name",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Date",
+              "chartType": "COLUMN_CHART"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "setAdaptiveYMin": true,
+              "widgetName": "Chart1",
+              "allowScroll": false,
+              "displayName": "Chart",
+              "iconSVG": "/static/media/icon.6adbe31e.svg",
+              "topRow": 11,
+              "bottomRow": 60,
+              "parentRowSpace": 10,
+              "type": "CHART_WIDGET",
+              "hideCard": false,
+              "chartData": {
+                "ne16c9y3wg": {
+                  "seriesName": "Expenses/Transaction",
+                  "data": "{{\nfunction(){\n    let debit=0,credit=0\n    for(let i=0;i < Table1.tableData.length; i++){\n        if(Table1.tableData[i][\"Transaction\"] == \"Debit\"){\n\t\t\t\t\tdebit += parseInt(Table1.tableData[i][\"Amount\"])\n\t\t\t\t}else if(Table1.tableData[i][\"Transaction\"] == \"Credit\"){\n\t\t\t\t\tcredit += parseInt(Table1.tableData[i][\"Amount\"])\n\t\t\t\t}\n    }\n        return [{\n          \"x\": \"Debit\",\n\t\t\t\t\t\"y\": debit\n        },{\n          \"x\": \"Credit\",\n\t\t\t\t\t\"y\": credit\n        }]\n}()\n}}\n"
+                }
+              },
+              "animateLoading": true,
+              "parentColumnSpace": 19.8125,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "chartData.ne16c9y3wg.data"
+                }
+              ],
+              "customFusionChartConfig": {
+                "type": "column2d",
+                "dataSource": {
+                  "chart": {
+                    "caption": "Sales Report",
+                    "xAxisName": "Product Line",
+                    "yAxisName": "Revenue($)",
+                    "theme": "fusion"
+                  },
+                  "data": [
+                    {
+                      "label": "Product1",
+                      "value": 20000
+                    },
+                    {
+                      "label": "Product2",
+                      "value": 22000
+                    },
+                    {
+                      "label": "Product3",
+                      "value": 32000
+                    }
+                  ]
+                }
+              },
+              "key": "dbzb956pkt",
+              "isDeprecated": false,
+              "rightColumn": 24,
+              "widgetId": "iynby2qudu",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "labelOrientation": "auto",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "yAxisName": "Amount ($)",
+              "chartName": "Expenses per Transaction type",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "xAxisName": "Date",
+              "chartType": "PIE_CHART"
+            },
+            {
+              "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "Date",
+                "Description",
+                "Amount",
+                "Transaction",
+                "Category",
+                "Account",
+                "rowIndex"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 218,
+              "bottomRow": 244,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "animateLoading": true,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "accentColor"
+                },
+                {
+                  "key": "borderRadius"
+                },
+                {
+                  "key": "boxShadow"
+                },
+                {
+                  "key": "childStylesheet.button.buttonColor"
+                },
+                {
+                  "key": "childStylesheet.button.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.menuButton.menuColor"
+                },
+                {
+                  "key": "childStylesheet.menuButton.borderRadius"
+                },
+                {
+                  "key": "childStylesheet.iconButton.buttonColor"
+                },
+                {
+                  "key": "childStylesheet.iconButton.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.Date.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Description.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Amount.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Transaction.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Category.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Account.computedValue"
+                },
+                {
+                  "key": "primaryColumns.rowIndex.computedValue"
+                }
+              ],
+              "leftColumn": 0,
+              "primaryColumns": {
+                "Date": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "Date",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Date",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Date))}}",
+                  "cellBackground": ""
+                },
+                "Description": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "Description",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Description",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Description))}}",
+                  "cellBackground": ""
+                },
+                "Amount": {
+                  "index": 2,
+                  "width": 150,
+                  "id": "Amount",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Amount",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Amount))}}",
+                  "cellBackground": ""
+                },
+                "Transaction": {
+                  "index": 3,
+                  "width": 150,
+                  "id": "Transaction",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Transaction",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Transaction))}}",
+                  "cellBackground": ""
+                },
+                "Category": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "Category",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Category",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Category))}}",
+                  "cellBackground": ""
+                },
+                "Account": {
+                  "index": 5,
+                  "width": 150,
+                  "id": "Account",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Account",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Account))}}",
+                  "cellBackground": ""
+                },
+                "rowIndex": {
+                  "index": 6,
+                  "width": 150,
+                  "id": "rowIndex",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "rowIndex",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.rowIndex))}}",
+                  "cellBackground": ""
+                }
+              },
+              "delimiter": ",",
+              "key": "buem5ke6zn",
+              "derivedColumns": {},
+              "isDeprecated": false,
+              "rightColumn": 45,
+              "textSize": "0.875rem",
+              "widgetId": "boi4vxi808",
+              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+              "isVisibleFilters": true,
+              "tableData": "{{getLast200Transactions.data}}",
+              "isVisible": false,
+              "label": "Data",
+              "searchKey": "",
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "childStylesheet": {
+                "button": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "menuButton": {
+                  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "iconButton": {
+                  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Analytics_getLast200Transactions",
+              "name": "getLast200Transactions",
+              "confirmBeforeExecute": false,
+              "pluginType": "SAAS",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "widgetNames": [
           "Canvas1",
+          "Chart1",
+          "Chart1Copy",
+          "Chart1Copy1",
+          "Chart1Copy1Copy",
+          "Chart1Copy1CopyCopy",
+          "Chart1CopyCopy",
           "Container1",
-          "MainContainer"
+          "Image1",
+          "MainContainer",
+          "Table1",
+          "Text1",
+          "Text1CopyCopy"
         ],
         "validOnPageLoadActions": true,
         "id": "Analytics",

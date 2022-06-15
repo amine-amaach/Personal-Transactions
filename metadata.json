@@ -22,6 +22,10 @@
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
+    "Analytics_getLast200Transactions": {
+      "unpublishedUserSetOnLoad": false,
+      "publishedUserSetOnLoad": false
+    },
     "Update Transactions_deleteTransaction": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false

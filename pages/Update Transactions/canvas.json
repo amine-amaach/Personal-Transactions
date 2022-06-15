@@ -61,14 +61,7 @@
                   "minHeight": 400,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
-                  "dynamicBindingPathList": [
-                    {
-                      "key": "borderRadius"
-                    },
-                    {
-                      "key": "accentColor"
-                    }
-                  ],
+                  "dynamicBindingPathList": [],
                   "children": [
                     {
                       "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
@@ -85,43 +78,28 @@
                           "key": "tableData"
                         },
                         {
-                          "key": "accentColor"
+                          "key": "primaryColumns.customColumn1.buttonLabel"
                         },
                         {
-                          "key": "childStylesheet.button.buttonColor"
-                        },
-                        {
-                          "key": "childStylesheet.button.borderRadius"
-                        },
-                        {
-                          "key": "childStylesheet.menuButton.menuColor"
-                        },
-                        {
-                          "key": "childStylesheet.menuButton.borderRadius"
-                        },
-                        {
-                          "key": "childStylesheet.iconButton.buttonColor"
-                        },
-                        {
-                          "key": "childStylesheet.iconButton.borderRadius"
-                        },
-                        {
-                          "key": "primaryColumns.Date.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.Description.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.Amount.computedValue"
-                        },
-                        {
-                          "key": "primaryColumns.Category.computedValue"
+                          "key": "primaryColumns.Account.computedValue"
                         },
                         {
                           "key": "primaryColumns.Transaction.computedValue"
                         },
                         {
-                          "key": "primaryColumns.Account.computedValue"
+                          "key": "primaryColumns.Category.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Amount.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Description.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.Date.computedValue"
+                        },
+                        {
+                          "key": "accentColor"
                         }
                       ],
                       "leftColumn": 0,
@@ -171,6 +149,7 @@
                         "Transaction",
                         "Category",
                         "Account",
+                        "customColumn1",
                         "rowIndex"
                       ],
                       "dynamicPropertyPathList": [],
@@ -183,6 +162,9 @@
                       "dynamicTriggerPathList": [
                         {
                           "key": "onPageChange"
+                        },
+                        {
+                          "key": "primaryColumns.customColumn1.onClick"
                         }
                       ],
                       "primaryColumns": {
@@ -318,10 +300,57 @@
                           "label": "Account",
                           "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.Account))}}",
                           "cellBackground": ""
+                        },
+                        "customColumn1": {
+                          "index": 7,
+                          "width": 150,
+                          "id": "customColumn1",
+                          "columnType": "button",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": true,
+                          "label": "Delete",
+                          "computedValue": "",
+                          "buttonStyle": "rgb(3, 179, 101)",
+                          "labelColor": "#FFFFFF",
+                          "buttonColor": "#b91c1c",
+                          "borderRadius": "1.5rem",
+                          "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                          "iconName": "",
+                          "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
+                          "buttonVariant": "PRIMARY",
+                          "onClick": "{{deleteTransaction.run(() => getTransactions.run(), () => {})}}"
                         }
                       },
                       "key": "buem5ke6zn",
-                      "derivedColumns": {},
+                      "derivedColumns": {
+                        "customColumn1": {
+                          "index": 7,
+                          "width": 150,
+                          "id": "customColumn1",
+                          "columnType": "button",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": true,
+                          "label": "Delete",
+                          "computedValue": "",
+                          "buttonStyle": "rgb(3, 179, 101)",
+                          "labelColor": "#FFFFFF",
+                          "buttonColor": "#b91c1c",
+                          "borderRadius": "1.5rem",
+                          "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                          "iconName": "",
+                          "buttonLabel": "{{Table1.sanitizedTableData.map((currentRow) => ( 'Delete'))}}",
+                          "buttonVariant": "PRIMARY",
+                          "onClick": "{{deleteTransaction.run(() => getTransactions.run(), () => {})}}"
+                        }
+                      },
                       "isDeprecated": false,
                       "rightColumn": 37,
                       "textSize": "0.875rem",
@@ -372,14 +401,7 @@
                           "minHeight": 400,
                           "parentColumnSpace": 1,
                           "leftColumn": 0,
-                          "dynamicBindingPathList": [
-                            {
-                              "key": "borderRadius"
-                            },
-                            {
-                              "key": "accentColor"
-                            }
-                          ],
+                          "dynamicBindingPathList": [],
                           "children": [
                             {
                               "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
@@ -403,13 +425,13 @@
                               "leftColumn": 1,
                               "dynamicBindingPathList": [
                                 {
-                                  "key": "accentColor"
+                                  "key": "defaultOptionValue"
                                 },
                                 {
                                   "key": "labelTextColor"
                                 },
                                 {
-                                  "key": "defaultOptionValue"
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelPosition": "Left",
@@ -447,11 +469,7 @@
                               "fontFamily": "Inter",
                               "dynamicTriggerPathList": [],
                               "leftColumn": 1,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "shouldTruncate": false,
                               "borderWidth": "",
                               "truncateButtonColor": "#FFC13D",
@@ -577,13 +595,13 @@
                               "leftColumn": 1,
                               "dynamicBindingPathList": [
                                 {
-                                  "key": "accentColor"
+                                  "key": "defaultDate"
                                 },
                                 {
                                   "key": "labelTextColor"
                                 },
                                 {
-                                  "key": "defaultDate"
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelPosition": "Left",
@@ -633,13 +651,13 @@
                               "leftColumn": 1,
                               "dynamicBindingPathList": [
                                 {
-                                  "key": "accentColor"
+                                  "key": "defaultOptionValue"
                                 },
                                 {
                                   "key": "labelTextColor"
                                 },
                                 {
-                                  "key": "defaultOptionValue"
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelPosition": "Left",
@@ -684,16 +702,16 @@
                               "leftColumn": 1,
                               "dynamicBindingPathList": [
                                 {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "labelTextColor"
+                                  "key": "options"
                                 },
                                 {
                                   "key": "defaultOptionValue"
                                 },
                                 {
-                                  "key": "options"
+                                  "key": "labelTextColor"
+                                },
+                                {
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelPosition": "Left",
@@ -736,10 +754,10 @@
                               "leftColumn": 1,
                               "dynamicBindingPathList": [
                                 {
-                                  "key": "accentColor"
+                                  "key": "defaultText"
                                 },
                                 {
-                                  "key": "defaultText"
+                                  "key": "accentColor"
                                 }
                               ],
                               "labelPosition": "Left",
@@ -784,13 +802,13 @@
                               "leftColumn": 35,
                               "dynamicBindingPathList": [
                                 {
+                                  "key": "defaultText"
+                                },
+                                {
                                   "key": "accentColor"
                                 },
                                 {
                                   "key": "borderRadius"
-                                },
-                                {
-                                  "key": "defaultText"
                                 }
                               ],
                               "labelPosition": "Left",
@@ -892,10 +910,10 @@
               "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
-                  "key": "boxShadow"
+                  "key": "borderColor"
                 },
                 {
-                  "key": "borderColor"
+                  "key": "boxShadow"
                 }
               ],
               "children": [
@@ -912,14 +930,7 @@
                   "minHeight": 400,
                   "parentColumnSpace": 1,
                   "leftColumn": 0,
-                  "dynamicBindingPathList": [
-                    {
-                      "key": "borderRadius"
-                    },
-                    {
-                      "key": "accentColor"
-                    }
-                  ],
+                  "dynamicBindingPathList": [],
                   "children": [
                     {
                       "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
